@@ -14,3 +14,5 @@ public class PageEvent {
     private Date date;
     private long duration;
 }
+
+

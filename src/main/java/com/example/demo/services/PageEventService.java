@@ -71,7 +71,6 @@ public class PageEventService {
     @Bean
     public Function<KStream<String,PageEvent>, KStream<String,Long>> KStreamFunction(){
 
-        //nombre de visites pour une chaque
         return (input)->{
             return input
                     .filter((k,v)->v.getDuration()>100)
